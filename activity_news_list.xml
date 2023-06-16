@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Initial_deposit_amount_ru" />
+    <EditText
+        android:hint="Initial deposit amount:"
+        android:textSize="14sp"
+        android:id="@+id/et_deposit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Interest_rate_ru" />
+    <EditText
+        android:hint="Interest rate (%):"
+        android:textSize="14sp"
+        android:id="@+id/et_interest_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Целевая сумма вклада:" />
+    <EditText
+        android:hint="Target deposit amount:"
+        android:textSize="14sp"
+        android:id="@+id/et_target_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Процент увеличения целевой суммы (%/год):" />
+    <EditText
+        android:hint="Target Amount Increase Percentage (%/year):"
+        android:textSize="14sp"
+        android:id="@+id/et_increase_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ежемесячное пополнение вклада:" />
+    <EditText
+        android:hint="Monthly deposit replenishment:"
+        android:textSize="14sp"
+        android:id="@+id/et_monthly_addition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Рассчитать/Calculate" />
+
+
+
+</LinearLayout>
